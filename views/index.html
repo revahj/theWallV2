@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descriptiion" content="This a forum dashboard for Village 88">
+    <title>The Wall Assignment</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/forum.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="signup_container" class="signup_login_container">
+            <h2>Welcome</h2>
+            <h3>Register a new account.</h3>
+            <form id="signup_form">
+                <div class="input_container">
+                    <label for="first_name_input">First Name</label>
+                    <input type="text" id="first_name_input" class="signup_input">
+                </div>
+                <div class="input_container">
+                    <label for="last_name_input">Last Name</label>
+                    <input type="text" id="last_name_input" class="signup_input">
+                </div>
+                <label for="email_input">Email</label>
+                <input type="text" id="email_input" class="signup_input">
+                <label for="password_input">Password</label>
+                <input type="password" id="password_input" class="signup_input">
+                <button type="submit"><img src="../assets/images/loading.gif" alt="processing_icon"> <span>Signup</span> </button>
+            </form>
+            <p>Already have an account? <button class="login_btn">Login</button></p>
+            <img src="../assets/images/the_wall_logo.svg" alt="The Wall Logo">
+        </div>
+        <div id="login_container" class="signup_login_container hidden">
+            <h2>Welcome</h2>
+            <h3>Login your account.</h3>
+            <form id="login_form">
+                <label for="email_login_input">Email</label>
+                <input type="text" id="email_login_input" class="login_input">
+                <label for="password_login_input">Password</label>
+                <input type="password" id="password_login_input" class="login_input">
+                <button type="submit"><img src="../assets/images/loading.gif" alt="processing_icon"> <span>Signup</span> </button>
+            </form>
+            <p>Don’t have an account? <button class="signup_btn">Sign up</button></p>
+            <img src="../assets/images/the_wall_logo.svg" alt="The Wall Logo">
+        </div>
+        <div id="forum_dashboard" class="hidden">
+            <header>
+                <img src="../assets/images/the_wall_logo_small.svg" alt="The Wall Logo">
+                <button id="profile_dropdown">
+                    <span class="login_profile_initials">JG</span>
+                    <span class="profile_name">Jhaver Gurtiza</span>
+                </button>
+                <button id="logout_btn" class="hidden">Logout</button>
+            </header>
+            <div id="forum_content_container">
+                <h2>Goodmoring <span class="profile_greeting">Jhaver,</span></h2>
+                <p>Welcome to V88 Forum Dashboard</p>
+                <form id="forum_post_form" class="post_form">
+                    <span class="login_profile_initials">JG</span>
+                    <textarea name="topic_textarea" id="topic_textarea" placeholder="Post your Topic..."></textarea>
+                    <button type="submit">Post</button>
+                </form>
+                <h3>Recent Forums</h3>
+                <ul id="forum_topic_list"></ul>
+            </div>
+            <div id="forum_modal" class="hidden">
+                <div class="forum_modal_content">
+                    <button class="close_modal_btn"></button>
+                    <span class="forum_info">
+                        <span class="profile_initial">JG</span>
+                        <span class="topic_profile">Jhaver Gurtiza (01/01/2021)</span>
+                    </span>
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum nec feugiat massa adipiscing. Sit at placerat nisi, sed lorem porttitor nulla aliquam fermentum. Mi curabitur consequat congue consectetur erat sed.</h2> 
+                    <form id="response_form" class="post_form">
+                        <span class="login_profile_initials">JG</span>
+                        <textarea name="response_textarea" id="response_textarea" placeholder="Post your Topic..."></textarea>
+                        <button type="submit">Post</button>
+                    </form>
+                    <h3>Responses (10)</h3>
+                    <ul id="forum_response_list"></ul>
+                </div>
+            </div>
+        </div>
+        <ul id="clone_container" class="hidden">
+            <li class="forum_topic_item">
+                <button type="button" class="open_topic_btn" onclick="showForumModal(this.id)">   
+                    <p></p>
+                    <span class="forum_info">
+                        <span class="profile_initial"></span>
+                        <span class="topic_profile"></span>
+                        <span class="response_info"></span>
+                    </span>
+                </button>
+            </li>
+            <li class="forum_response_item">
+                <span class="forum_info">
+                    <span class="profile_initial"></span>
+                    <span class="topic_profile"></span>
+                </span>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

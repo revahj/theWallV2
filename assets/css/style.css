@@ -1,0 +1,484 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: robotoRegular, sans-serif;
+}
+@font-face {
+  font-family: robotoBlack;
+  src: url("../fonts/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: robotoBlackItalic;
+  src: url("../fonts/Roboto-BlackItalic.ttf");
+}
+@font-face {
+  font-family: robotoBold;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: robotoBoldItalic;
+  src: url("../fonts/Roboto-BoldItalic.ttf");
+}
+@font-face {
+  font-family: robotoItalic;
+  src: url("../fonts/Roboto-Italic.ttf");
+}
+@font-face {
+  font-family: robotoLight;
+  src: url("../fonts/Roboto-Roboto-Light.ttf");
+}
+@font-face {
+  font-family: robotoLightItalic;
+  src: url("../fonts/Roboto-LightItalic.ttf");
+}
+@font-face {
+  font-family: robotoLightMedium;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: robotoLighMediumItalic;
+  src: url("../fonts/Roboto-MediumItalic.ttf");
+}
+@font-face {
+  font-family: robotoLight5MediumRegular;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: robotoThin;
+  src: url("../fonts/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: robotoThinItalic;
+  src: url("../fonts/Roboto-ThinItalic.ttff");
+}
+body {
+  margin: 0px;
+  background-color: #2C2D34;
+}
+#wrapper .signup_login_container {
+  background-color: #1D1F2B;
+  border-radius: 20px;
+  display: block;
+  height: 671px;
+  margin: 80px auto 0px auto;
+  padding: 70px 284px 20px 77px;
+  position: relative;
+  transition: 0.21s;
+  vertical-align: top;
+  width: 876px;
+}
+#wrapper .signup_login_container::after {
+  background-color: #3b3c43;
+  background-image: url("../images/the_wall_bg.png");
+  border-radius: 0px 20px 20px 0px;
+  content: "";
+  display: inline-block;
+  height: 671px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  vertical-align: top;
+  width: 205px;
+}
+#wrapper .signup_login_container h3 {
+  color: #6d7186;
+  font: 17px/20px robotoRegular, sans-serif;
+  margin: 0px 0px 42px 0px;
+  padding-left: 73px;
+}
+#wrapper .signup_login_container h2 {
+  color: #ffffff;
+  font: 21px/24px robotoRegular, sans-serif;
+  margin: 0px 0px 4px 76px;
+  position: relative;
+}
+#wrapper .signup_login_container h2::before {
+  background-image: url("../images/the_wall_logo_gray.svg");
+  content: "";
+  display: inline-block;
+  height: 46px;
+  left: -75px;
+  position: absolute;
+  vertical-align: top;
+  width: 46px;
+}
+#wrapper .signup_login_container form label {
+  color: #6d7186;
+  display: block;
+  font: 14px/16px robotoRegular, sans-serif;
+  margin-bottom: 0px;
+  vertical-align: top;
+  margin-bottom: 9px;
+}
+#wrapper .signup_login_container form input {
+  width: 100%;
+  background-color: #31354F;
+  border-radius: 9px;
+  border: 1px solid #31354F;
+  height: 60px;
+  margin-bottom: 17px;
+  transition: 0.21s;
+  outline: none;
+  padding-left: 15px;
+  color: #ffffff;
+}
+#wrapper .signup_login_container form input:focus {
+  border: 1px solid #00a3ff;
+}
+#wrapper .signup_login_container form .input_container {
+  width: 247px;
+  display: inline-block;
+  vertical-align: top;
+}
+#wrapper .signup_login_container form .input_container:nth-child(1) {
+  margin-right: 15px;
+}
+#wrapper .signup_login_container form button {
+  background-color: #00a3ff;
+  width: 100%;
+  height: 60px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: 0.21s;
+  border: none;
+  margin-top: 13px;
+}
+#wrapper .signup_login_container form button:hover {
+  opacity: 0.8;
+}
+#wrapper .signup_login_container form button.processing_btn {
+  background-color: #ffffff;
+  height: 92px;
+  cursor: not-allowed;
+}
+#wrapper .signup_login_container form button.processing_btn > span {
+  color: #00a3ff;
+  margin-top: 24px;
+}
+#wrapper .signup_login_container form button.processing_btn img {
+  display: inline-block;
+}
+#wrapper .signup_login_container form button > span {
+  font: 21px/24px robotoBold, sans-serif;
+  color: #ffffff;
+  vertical-align: top;
+  display: inline-block;
+}
+#wrapper .signup_login_container form button img {
+  display: none;
+}
+#wrapper .signup_login_container p {
+  color: #6d7186;
+  font: 17px/20px robotoRegular, sans-serif;
+  text-align: center;
+  margin-top: 37px;
+}
+#wrapper .signup_login_container p button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #00a3ff;
+  font: 17px/20px robotoRegular, sans-serif;
+  cursor: pointer;
+}
+#wrapper .signup_login_container p button:hover {
+  text-decoration: underline;
+}
+#wrapper .signup_login_container > img {
+  position: absolute;
+  top: 70px;
+  right: 60px;
+  z-index: 3;
+}
+#wrapper #forum_dashboard {
+  display: block;
+}
+#wrapper #forum_dashboard header {
+  height: 57px;
+  width: 100%;
+  position: fixed;
+  background-color: #1E1F25;
+  z-index: 3;
+  padding: 14px 35px;
+  top: 0px;
+}
+#wrapper #forum_dashboard header #profile_dropdown {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.21s;
+}
+#wrapper #forum_dashboard header #profile_dropdown .login_profile_initials {
+  font: 11px/26px robotoMedium, sans-serif;
+  color: #1E1F25;
+  width: 26px;
+  height: 26px;
+  background-color: #85eb7e;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+#wrapper #forum_dashboard header #profile_dropdown .profile_name {
+  color: #ffffff;
+  font: 14px/16px robotoRegular, sans-serif;
+  margin: 6px 0px 0px 6px;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: capitalize;
+}
+#wrapper #forum_dashboard header #profile_dropdown:hover {
+  opacity: 0.8;
+}
+#wrapper #forum_dashboard #forum_content_container {
+  width: 978px;
+  margin: 0px auto;
+  padding-top: 105px;
+}
+#wrapper #forum_dashboard #forum_content_container h2 {
+  font: 21px/24px robotoRegular, sans-serif;
+  color: #ffffff;
+  margin: 0px 0px 7px 0px;
+}
+#wrapper #forum_dashboard #forum_content_container h2 span {
+  text-transform: capitalize;
+}
+#wrapper #forum_dashboard #forum_content_container > p {
+  font: 17px/20px robotoRegular, sans-serif;
+  color: #6d7186;
+  margin: 0px 0px 55px 0px;
+}
+#wrapper #forum_dashboard #forum_content_container h3 {
+  font: 16px/18px robotoRegular, sans-serif;
+  color: #ffffff;
+  margin: 58px 0px 0px 0px;
+}
+#wrapper #forum_dashboard #forum_content_container > ul {
+  list-style: none;
+  padding: 0px;
+}
+#wrapper #forum_dashboard #forum_content_container > ul > li {
+  margin-bottom: 5px;
+}
+#wrapper #forum_dashboard #forum_content_container > ul > li > button {
+  background-color: #1E1F25;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+  transition: 0.21s;
+  text-align: left;
+  padding: 6px 20px 20px 20px;
+  width: 100%;
+}
+#wrapper #forum_dashboard #forum_content_container > ul > li > button:hover {
+  background-color: #434349;
+}
+#wrapper #forum_dashboard #forum_content_container > ul > li > button p {
+  font: 16px/25px robotoItalic, sans-serif;
+  color: #ffffff;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 13px;
+}
+#wrapper #forum_dashboard #forum_content_container > ul > li > button p::before {
+  content: "";
+  width: 35px;
+  height: 27px;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url("../images/forum_icon.svg");
+}
+#wrapper #forum_dashboard #forum_content_container > ul > li:last-child {
+  margin: 0px;
+}
+#wrapper #forum_dashboard .forum_info > span {
+  display: inline-block;
+  vertical-align: top;
+}
+#wrapper #forum_dashboard .forum_info .profile_initial {
+  width: 25px;
+  height: 25px;
+  background-color: #eb5757;
+  border-radius: 50%;
+  font: 11px/14px robotoBold, sans-serif;
+  color: #1E1F25;
+  text-align: center;
+  padding: 7px 0px;
+  margin-right: 7px;
+}
+#wrapper #forum_dashboard .forum_info .topic_profile,
+#wrapper #forum_dashboard .forum_info .response_info {
+  font: 14px/16px robotoRegular, sans-serif;
+  color: #6d7186;
+  margin-top: 6px;
+}
+#wrapper #forum_dashboard .forum_info .response_info {
+  border-left: 1px solid #6d7186;
+  margin-left: 13px;
+  padding-left: 18px;
+}
+#wrapper #forum_dashboard .post_form {
+  position: relative;
+}
+#wrapper #forum_dashboard .post_form .login_profile_initials {
+  width: 30px;
+  height: 30px;
+  background-color: #85eb7e;
+  border-radius: 50%;
+  font: 14px/19px robotoBold, sans-serif;
+  color: #1E1F25;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 6px 0px;
+  position: absolute;
+  top: 26px;
+  left: 30px;
+  text-transform: uppercase;
+}
+#wrapper #forum_dashboard .post_form textarea {
+  width: 100%;
+  height: 80px;
+  background-color: #3A3C46;
+  border-radius: 10px;
+  display: block;
+  resize: none;
+  border: 1px solid #3A3C46;
+  outline: none;
+  transition: 0.21s;
+  padding: 20px 0px 0px 78px;
+  font: 17px/40px robotoRegular, sans-serif;
+  color: #ffffff;
+}
+#wrapper #forum_dashboard .post_form textarea:focus {
+  border: 1px solid #00a3ff;
+}
+#wrapper #forum_dashboard .post_form button {
+  position: absolute;
+  right: 30px;
+  top: 22px;
+  background-color: #00a3ff;
+  width: 100px;
+  height: 38px;
+  color: #fff;
+  font: 14px/30px robotoSemiBold, sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 9px;
+  border: none;
+  outline: none;
+  transition: 0.21s;
+  cursor: pointer;
+}
+#wrapper #forum_dashboard .post_form button:hover {
+  opacity: 0.8;
+}
+#wrapper #forum_dashboard #forum_modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content {
+  background-color: #2C2D34;
+  width: 1066px;
+  height: 851px;
+  display: block;
+  border-radius: 20px;
+  margin: 50px auto 0px auto;
+  padding: 40px 84px 40px 84px;
+  position: relative;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content .close_modal_btn {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../images/close_btn.svg");
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  opacity: 0.5;
+  transition: 0.21s;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content .close_modal_btn:hover {
+  opacity: 1;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content::before {
+  content: "";
+  width: 36px;
+  height: 28px;
+  display: block;
+  vertical-align: top;
+  background-image: url("../images/response_icon.svg");
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content h2 {
+  font: 22px/31px robotoItalic, sans-serif;
+  color: #ffffff;
+  margin: 8px 0px 32px 0px;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content h3 {
+  font: 16px/18px robotoRegular, sans-serif;
+  color: #ffffff;
+  margin: 48px 0px 26px 0px;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content #forum_response_list {
+  list-style: none;
+  padding: 0px;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content #forum_response_list > li p {
+  color: #9496a1;
+  font: 16px/25px robotoItalic, sans-serif;
+  margin: 9px 0px 32px 0px;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content #forum_response_list > li .forum_info {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content #forum_response_list > li .forum_info::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #3F404A;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  top: 14px;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content #forum_response_list > li .forum_info .profile_initial,
+#wrapper #forum_dashboard #forum_modal .forum_modal_content #forum_response_list > li .forum_info .topic_profile {
+  position: relative;
+  z-index: 2;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content #forum_response_list > li .forum_info .profile_initial {
+  margin-right: -3px;
+  text-transform: uppercase;
+}
+#wrapper #forum_dashboard #forum_modal .forum_modal_content #forum_response_list > li .forum_info .topic_profile {
+  background-color: #2C2D34;
+  padding: 0px 13px;
+}
+#wrapper .hidden {
+  display: none !important;
+}
+#wrapper .validation_error {
+  border: 1px solid #eb5757 !important;
+}
